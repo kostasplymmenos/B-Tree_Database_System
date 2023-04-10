@@ -1,6 +1,6 @@
-# B+ Tree_Database_System - Implementation of Database Systems Course NKUA 2017
+# B+ Tree Indexed DB System - Implementation of Database Systems Course NKUA 2017
 
-A functional database that supports data insertion, read and deletion through specific functions and queries
+A functional database that supports data insertion, read and deletion APIs and queries
 B+ Tree Index Implementation with a shared library that wraps a block level IO.
 
 Το Create an Index:
@@ -20,7 +20,7 @@ int AM_InsertEntry(int fileDesc, void *value1, void *value2)
 To Delete an Index:
 
 int AM_DestroyIndex(
-  char *fileName /* όνομα αρχείου */
+  char *fileName
 );
 ```
 Upon index creation you can search the index:
@@ -34,10 +34,10 @@ int AM_OpenIndexScan(
 Then use this function in a loop to get all the found items until NULL returned
 ```c
 void *AM_FindNextEntry(
-  int scanDesc /* αριθμός που αντιστοιχεί στην ανοιχτή σάρωση */
+  int scanDesc
 );
 ```
-Example of above:
+Example of API usage:
 ```c
 eage = 19;
 
