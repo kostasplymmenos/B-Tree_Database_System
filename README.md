@@ -1,6 +1,7 @@
 # B+ Tree Indexed DB System - Implementation of Database Systems Course NKUA 2017
 
-A functional database that supports data insertion, read and deletion APIs and queries
+A functional database that supports data insertion, read and deletion APIs and queries.
+
 B+ Tree Index Implementation with a shared library that wraps a block level IO.
 
 Το Create an Index:
